@@ -1,3 +1,5 @@
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -14,6 +16,8 @@ export default function Home() {
         <Hero></Hero>
         <Grid></Grid>
         <RecentProjects></RecentProjects>
+        <Clients></Clients>
+        <Experience></Experience>
       </div>
     </main>
   );
