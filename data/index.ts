@@ -72,10 +72,10 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "Delicious Restaurant E-commerce",
+      des: "Delicious Restaurant is a full-stack web application designed to facilitate user food ordering while providing an easy management interface for restaurant admins",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png",],
       link: "/ui.earth.com",
     },
     {
