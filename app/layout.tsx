@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./provider";
 
 
 const font = Sora({
@@ -23,7 +24,14 @@ export default function RootLayout({
       <body
         className={font.className} 
       >
-        {children}
+     <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );
