@@ -3,11 +3,10 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-
 const font = Sora({
-  weight : ['100', '200','300','400','500','600','700','800'],
-  subsets:['latin']
-}) 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: "Subahanali Portfolio",
@@ -21,17 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={font.className} 
-      >
-     <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+      <head>
+      <link rel="icon" href="/favjpg.jpg" sizes="any" />
+      </head>
+      <body className={font.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -140,6 +140,20 @@ export const projects = [
     ],
     link: "https://assignment-assetmanagement.web.app",
   },
+  {
+    id: 6,
+    title: "Friends Computer Shop",
+    des: "Friends Computer Shop is a one-stop solution for all computer repair and hardware needs. Located in the Forum Shopping Centre in Dinajpur, this store specializes in computer repairs, MacBook servicing...",
+    img: "/compu.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.png",
+      "./express.jpg",
+      "./firebase.png",
+    ],
+    link: "https://assignment-11-b49bc.web.app",
+  },
 ];
 
 export const testimonials = [
@@ -225,13 +239,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/Subahan-1D"
   },
   {
     id: 2,
     img: "/twit.svg",
+    link:"https://x.com/Subahan1323225"
   },
   {
     id: 3,
     img: "/link.svg",
+    link:"https://www.linkedin.com/in/subahanali523"
   },
 ];
