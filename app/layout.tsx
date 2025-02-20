@@ -7,7 +7,6 @@ const font = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
   subsets: ['latin'],
 });
-
 export const metadata: Metadata = {
   title: "Subahanali Portfolio",
   description: "subahanali portfolio next.js",
