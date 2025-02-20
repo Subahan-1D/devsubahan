@@ -6,7 +6,6 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 
 const RecentProjects = () => {
-  console.log("tumi ki project ",projects)
   return (
     <div className="py-20">
       <h1 className="heading">
