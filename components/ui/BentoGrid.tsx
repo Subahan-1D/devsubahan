@@ -1,14 +1,14 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 
-// import Lottie from "react-lottie";
+import Lottie from "react-lottie";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
-// // import GridGlobe from "./GridGlobe";
-// import animationData from "@/data/confetti.json";
+import GridGlobe from "./GridGlobe";
+import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import { cn } from "@/utils/cn";
 
@@ -53,18 +53,18 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["NodeJS", "NuxtJS", "MongoDB", ];
+  const rightLists = ["NodeJS", "NuxtJS", "MongoDB"];
 
   const [copied, setCopied] = useState(false);
 
-  // const defaultOptions = {
-  //   loop: copied,
-  //   autoplay: copied,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   const handleCopy = () => {
     const text = "subahanislam523@gmail.com";
@@ -107,7 +107,6 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              //   width={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -138,7 +137,7 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {/* {id === 2 && <GridGlobe />} */}
+          {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -182,7 +181,7 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
+                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
