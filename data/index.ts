@@ -100,9 +100,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Friends Computer Shop",
-    des: "Friends Computer Shop is a one-stop solution for all computer repair and hardware needs. Located in the Forum Shopping Centre in Dinajpur, this store specializes in computer repairs, MacBook servicing...",
-    img: "/compu.png",
+    title: "NextHire Development Work",
+    des: "NextHire is an advanced job recruitment platform designed to connect job seekers with employers efficiently. This platform allows users to browse job listings, apply for jobs, and track application statuses. Employers can post job openings, review applications, and manage recruitment seamlessly",
+    img: "/jobs.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -110,7 +110,7 @@ export const projects = [
       "./express.jpg",
       "./firebase.png",
     ],
-    link: "https://assignment-11-b49bc.web.app",
+    link: "https://nexthire-jobs-platfrom.web.app",
   },
   {
     id: 4,
