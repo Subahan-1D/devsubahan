@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
-  ssr: false,
-});
+
 
 const GridGlobe = () => {
   const globeConfig = {
@@ -424,9 +421,7 @@ const GridGlobe = () => {
         </motion.div> */}
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         {/* remove -bottom-20 */}
-        <div className="absolute w-full h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
-        </div>
+       
       </div>
     </div>
   );
