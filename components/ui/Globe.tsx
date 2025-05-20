@@ -3,15 +3,14 @@ import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber";
-import { Object3DNode } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
 
-declare module "@react-three/fiber" {
-  interface ThreeElements {
-    threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
-  }
-}
+// declare module "@react-three/fiber" {
+//   interface ThreeElements {
+//     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
+//   }
+// }
 extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
@@ -223,11 +222,11 @@ export function Globe({ globeConfig, data }: WorldProps) {
     };
   }, [globeRef?.current, globeData]);
 
-  return (
-    <>
-      <threeGlobe ref={globeRef} />
-    </>
-  );
+  // return (
+  //   <>
+  //     <threeGlobe ref={globeRef} />
+  //   </>
+  // );
 }
 
 export function WebGLRendererConfig() {
@@ -263,7 +262,7 @@ export function World(props: WorldProps) {
         position={new Vector3(-200, 500, 200)}
         intensity={0.8}
       />
-      <Globe {...props} />
+    
       <OrbitControls
         enablePan={false}
         enableZoom={false}

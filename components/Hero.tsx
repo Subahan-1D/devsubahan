@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Subahan, a MERN Stack Developer based in Bangladesh.
+            Hi! I&apos;m Subahan, a Full Stack Developer based in Bangladesh.
           </p>
 
           {/* Magic Button */}
